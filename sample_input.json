@@ -1,0 +1,7 @@
+{
+  "customer_name": "Asha Patel",
+  "email": "asha.patel@example.com",
+  "query": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321.",
+  "priority": "high",
+  "ticket_id": "TICKET-1001"
+}

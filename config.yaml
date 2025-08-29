@@ -1,0 +1,91 @@
+input_schema:
+  - customer_name
+  - email
+  - query
+  - priority
+  - ticket_id
+
+stages:
+  - name: INTAKE
+    mode: deterministic
+    abilities:
+      - accept_payload
+  - name: UNDERSTAND
+    mode: deterministic
+    abilities:
+      - parse_request_text
+      - extract_entities
+  - name: PREPARE
+    mode: deterministic
+    abilities:
+      - normalize_fields
+      - enrich_records
+      - add_flags_calculations
+  - name: ASK
+    mode: human
+    abilities:
+      - clarify_question
+  - name: WAIT
+    mode: deterministic
+    abilities:
+      - extract_answer
+      - store_answer
+  - name: RETRIEVE
+    mode: deterministic
+    abilities:
+      - knowledge_base_search
+      - store_data
+  - name: DECIDE
+    mode: non-deterministic
+    abilities:
+      - solution_evaluation
+      - escalation_decision
+      - update_payload
+  - name: UPDATE
+    mode: deterministic
+    abilities:
+      - update_ticket
+      - close_ticket
+  - name: CREATE
+    mode: deterministic
+    abilities:
+      - response_generation
+  - name: DO
+    mode: deterministic
+    abilities:
+      - execute_api_calls
+      - trigger_notifications
+  - name: COMPLETE
+    mode: deterministic
+    abilities:
+      - output_payload
+
+ability_to_mcp:
+  parse_request_text: COMMON
+  normalize_fields: COMMON
+  add_flags_calculations: COMMON
+  solution_evaluation: COMMON
+  response_generation: COMMON
+  accept_payload: COMMON
+
+  extract_entities: ATLAS
+  enrich_records: ATLAS
+  clarify_question: ATLAS
+  extract_answer: ATLAS
+  knowledge_base_search: ATLAS
+  escalation_decision: ATLAS
+  update_ticket: ATLAS
+  close_ticket: ATLAS
+  execute_api_calls: ATLAS
+  trigger_notifications: ATLAS
+  store_answer: COMMON
+  store_data: COMMON
+  update_payload: COMMON
+
+prompts:
+  parse_request_text: "Clean and extract a structured summary from the customer's query."
+  extract_entities: "Find product names, account IDs, dates from the text."
+  solution_evaluation: "Score each candidate solution 1-100 with short justification."
+  escalation_decision: "Decide to escalate if score < 90, return boolean and reason."
+  response_generation: "Draft a concise, friendly customer reply summarizing status and next steps."
+  clarify_question: "Ask for missing info needed to resolve the ticket."

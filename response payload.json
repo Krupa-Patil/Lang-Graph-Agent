@@ -1,0 +1,158 @@
+{
+  "customer_name": "Asha Patel",
+  "email": "asha.patel@example.com",
+  "query": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321.",
+  "priority": "HIGH",
+  "ticket_id": "TICKET-1001",
+  "summary": {
+    "summary": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321."
+  },
+  "entities": {
+    "product_name": "replacement",
+    "account_id": "ACCT-4321",
+    "order_id": "ORD-999",
+    "iso_date": null
+  },
+  "enrichment": {
+    "enrichment_note": "To enrich the customer record for Asha Patel with SLA and historical ticket counts, I would need to know the specific SLA details for her account and the historical ticket counts associated with her email. \n\nIf you have access to that information, please provide it, and I can help you compile the enriched record. If not, I can guide you on how to retrieve that data."
+  },
+  "flags": {
+    "risk": "HIGH"
+  },
+  "clarify_question": "What specific SLA details and historical ticket counts do you have for Asha Patel's account?",
+  "human_reply": "Here is the requested order id: ORD-12345",
+  "human_answer": "Here is the requested order id: ORD-12345",
+  "stored_answer": null,
+  "kb": {
+    "kb_raw": "```json\n[\n    {\n        \"title\": \"How to Request a Replacement for a Wrong Item\",\n        \"snippet\": \"If you received the wrong item in your order, you can request a replacement by contacting customer support through your account. Provide your order number and account ID for faster processing.\"\n    },\n    {\n        \"title\": \"Order Issues: Wrong Item Received\",\n        \"snippet\": \"In case you received an incorrect item, please check our return policy. You may need to fill out a return form and specify the item you received versus what you ordered.\"\n    },\n    {\n        \"title\": \"Contacting Customer Support\",\n        \"snippet\": \"To resolve issues with your order, you can reach out to customer support via email or phone. Make sure to have your order number and account ID ready for reference.\"\n    }\n]\n```"
+  },
+  "kb_stored": {
+    "stored_data": {
+      "query": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321.",
+      "customer_name": "Asha Patel",
+      "email": "asha.patel@example.com",
+      "priority": "HIGH",
+      "ticket_id": "TICKET-1001",
+      "summary": {
+        "summary": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321."
+      },
+      "entities": {
+        "product_name": "replacement",
+        "account_id": "ACCT-4321",
+        "order_id": "ORD-999",
+        "iso_date": null
+      },
+      "enrichment": {
+        "enrichment_note": "To enrich the customer record for Asha Patel with SLA and historical ticket counts, I would need to know the specific SLA details for her account and the historical ticket counts associated with her email. \n\nIf you have access to that information, please provide it, and I can help you compile the enriched record. If not, I can guide you on how to retrieve that data."
+      },
+      "flags": {
+        "risk": "HIGH"
+      },
+      "clarify_question": "What specific SLA details and historical ticket counts do you have for Asha Patel's account?",
+      "human_reply": "Here is the requested order id: ORD-12345",
+      "human_answer": "Here is the requested order id: ORD-12345",
+      "stored_answer": null,
+      "kb": {
+        "kb_raw": "```json\n[\n    {\n        \"title\": \"How to Request a Replacement for a Wrong Item\",\n        \"snippet\": \"If you received the wrong item in your order, you can request a replacement by contacting customer support through your account. Provide your order number and account ID for faster processing.\"\n    },\n    {\n        \"title\": \"Order Issues: Wrong Item Received\",\n        \"snippet\": \"In case you received an incorrect item, please check our return policy. You may need to fill out a return form and specify the item you received versus what you ordered.\"\n    },\n    {\n        \"title\": \"Contacting Customer Support\",\n        \"snippet\": \"To resolve issues with your order, you can reach out to customer support via email or phone. Make sure to have your order number and account ID ready for reference.\"\n    }\n]\n```"
+      }
+    }
+  },
+  "evaluations": [],
+  "top_solution": [],
+  "escalation_decision": {
+    "escalate": false,
+    "reason": "No scores provided to evaluate."
+  },
+  "ticket_update": {
+    "ticket_updated": true
+  },
+  "ticket_close": {
+    "ticket_closed": true
+  },
+  "customer_response": "Subject: We're Here to Help with Your Order Issue\n\nHi Asha,\n\nThank you for reaching out, and I\u2019m truly sorry to hear that you received the wrong item in your order (ORD-999). I understand how frustrating this can be, and I\u2019m here to assist you in getting a replacement.\n\nHere are the steps we\u2019ll take to resolve this:\n\n1. **Return the Incorrect Item**: Please fill out our return form, which you can find [here](#). Make sure to specify the item you received and the item you ordered.\n   \n2. **Replacement Processing**: Once we receive the return, we will process your replacement order immediately.\n\n3. **Confirmation**: You will receive a confirmation email with tracking information once your replacement has been shipped.\n\nIf you have any questions or need further assistance, please don\u2019t hesitate to reach out. Your satisfaction is our priority!\n\nBest regards,  \n[Your Name]  \nCustomer Support Team  \nasha.patel@example.com",
+  "api_actions": {
+    "api_calls_executed": true
+  },
+  "notifications": {
+    "notifications_sent": true
+  },
+  "output_payload": {
+    "query": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321.",
+    "customer_name": "Asha Patel",
+    "email": "asha.patel@example.com",
+    "priority": "HIGH",
+    "ticket_id": "TICKET-1001",
+    "summary": {
+      "summary": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321."
+    },
+    "entities": {
+      "product_name": "replacement",
+      "account_id": "ACCT-4321",
+      "order_id": "ORD-999",
+      "iso_date": null
+    },
+    "enrichment": {
+      "enrichment_note": "To enrich the customer record for Asha Patel with SLA and historical ticket counts, I would need to know the specific SLA details for her account and the historical ticket counts associated with her email. \n\nIf you have access to that information, please provide it, and I can help you compile the enriched record. If not, I can guide you on how to retrieve that data."
+    },
+    "flags": {
+      "risk": "HIGH"
+    },
+    "clarify_question": "What specific SLA details and historical ticket counts do you have for Asha Patel's account?",
+    "human_reply": "Here is the requested order id: ORD-12345",
+    "human_answer": "Here is the requested order id: ORD-12345",
+    "stored_answer": null,
+    "kb": {
+      "kb_raw": "```json\n[\n    {\n        \"title\": \"How to Request a Replacement for a Wrong Item\",\n        \"snippet\": \"If you received the wrong item in your order, you can request a replacement by contacting customer support through your account. Provide your order number and account ID for faster processing.\"\n    },\n    {\n        \"title\": \"Order Issues: Wrong Item Received\",\n        \"snippet\": \"In case you received an incorrect item, please check our return policy. You may need to fill out a return form and specify the item you received versus what you ordered.\"\n    },\n    {\n        \"title\": \"Contacting Customer Support\",\n        \"snippet\": \"To resolve issues with your order, you can reach out to customer support via email or phone. Make sure to have your order number and account ID ready for reference.\"\n    }\n]\n```"
+    },
+    "kb_stored": {
+      "stored_data": {
+        "query": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321.",
+        "customer_name": "Asha Patel",
+        "email": "asha.patel@example.com",
+        "priority": "HIGH",
+        "ticket_id": "TICKET-1001",
+        "summary": {
+          "summary": "Hi, I received the wrong item in my order ORD-999. I need a replacement. My account id is ACCT-4321."
+        },
+        "entities": {
+          "product_name": "replacement",
+          "account_id": "ACCT-4321",
+          "order_id": "ORD-999",
+          "iso_date": null
+        },
+        "enrichment": {
+          "enrichment_note": "To enrich the customer record for Asha Patel with SLA and historical ticket counts, I would need to know the specific SLA details for her account and the historical ticket counts associated with her email. \n\nIf you have access to that information, please provide it, and I can help you compile the enriched record. If not, I can guide you on how to retrieve that data."
+        },
+        "flags": {
+          "risk": "HIGH"
+        },
+        "clarify_question": "What specific SLA details and historical ticket counts do you have for Asha Patel's account?",
+        "human_reply": "Here is the requested order id: ORD-12345",
+        "human_answer": "Here is the requested order id: ORD-12345",
+        "stored_answer": null,
+        "kb": {
+          "kb_raw": "```json\n[\n    {\n        \"title\": \"How to Request a Replacement for a Wrong Item\",\n        \"snippet\": \"If you received the wrong item in your order, you can request a replacement by contacting customer support through your account. Provide your order number and account ID for faster processing.\"\n    },\n    {\n        \"title\": \"Order Issues: Wrong Item Received\",\n        \"snippet\": \"In case you received an incorrect item, please check our return policy. You may need to fill out a return form and specify the item you received versus what you ordered.\"\n    },\n    {\n        \"title\": \"Contacting Customer Support\",\n        \"snippet\": \"To resolve issues with your order, you can reach out to customer support via email or phone. Make sure to have your order number and account ID ready for reference.\"\n    }\n]\n```"
+        }
+      }
+    },
+    "evaluations": [],
+    "top_solution": [],
+    "escalation_decision": {
+      "escalate": false,
+      "reason": "No scores provided to evaluate."
+    },
+    "ticket_update": {
+      "ticket_updated": true
+    },
+    "ticket_close": {
+      "ticket_closed": true
+    },
+    "customer_response": "Subject: We're Here to Help with Your Order Issue\n\nHi Asha,\n\nThank you for reaching out, and I\u2019m truly sorry to hear that you received the wrong item in your order (ORD-999). I understand how frustrating this can be, and I\u2019m here to assist you in getting a replacement.\n\nHere are the steps we\u2019ll take to resolve this:\n\n1. **Return the Incorrect Item**: Please fill out our return form, which you can find [here](#). Make sure to specify the item you received and the item you ordered.\n   \n2. **Replacement Processing**: Once we receive the return, we will process your replacement order immediately.\n\n3. **Confirmation**: You will receive a confirmation email with tracking information once your replacement has been shipped.\n\nIf you have any questions or need further assistance, please don\u2019t hesitate to reach out. Your satisfaction is our priority!\n\nBest regards,  \n[Your Name]  \nCustomer Support Team  \nasha.patel@example.com",
+    "api_actions": {
+      "api_calls_executed": true
+    },
+    "notifications": {
+      "notifications_sent": true
+    }
+  }
+}
